@@ -14,5 +14,9 @@ export default defineComponent({
 
 <style lang="scss">
 #app {
+  display: flex;
+  flex-direction: column;
+  max-width: 1460px;
+  margin: auto;
 }
 </style>
