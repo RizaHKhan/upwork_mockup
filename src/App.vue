@@ -5,7 +5,7 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import Header from "@/components/Menu";
+import Header from "@/components/Menu.vue";
 
 export default defineComponent({
   components: { Header },
