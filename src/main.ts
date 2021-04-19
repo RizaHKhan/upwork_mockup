@@ -4,6 +4,6 @@ import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
 import "@/assets/css/globals.scss";
-import "@/assets/css/variables.scss";
+// import "@/assets/css/variables.scss";
 
 createApp(App).use(store).use(router).mount("#app");
