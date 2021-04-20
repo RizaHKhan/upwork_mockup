@@ -37,8 +37,15 @@ export default defineComponent({
   display: grid;
   grid-template-columns: 200px 1fr;
 
+  @include media-down(md) {
+    grid-template-columns: 1fr;
+  }
+
   &__icon {
     margin: 30px auto 0 auto;
+    @include media-down(md) {
+      margin: 0px auto 30px auto;
+    }
   }
 
   &__content {
