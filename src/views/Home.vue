@@ -24,6 +24,7 @@
       :image="article.image"
       :imgPosition="article.imgPosition"
     />
+    <CallToAction />
   </div>
 </template>
 
@@ -33,6 +34,7 @@ import CoreBreaker from "@/components/core/CoreBreaker.vue";
 import Hero from "@/components/Hero.vue";
 import Article from "@/components/Article.vue";
 import Quote from "@/components/Quote.vue";
+import CallToAction from "@/components/CallToAction.vue";
 
 export default defineComponent({
   name: "Home",
@@ -41,6 +43,7 @@ export default defineComponent({
     Hero,
     Article,
     Quote,
+    CallToAction,
   },
   setup() {
     const heroContent = {
