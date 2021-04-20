@@ -42,6 +42,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "../assets/css/breakpoints.scss";
+
 .home {
   display: flex;
   flex-direction: column;
@@ -57,6 +59,9 @@ export default defineComponent({
 
   &__title {
     font-size: 96px;
+    @include media-down(lg) {
+      font-size: 36px;
+    }
   }
 
   &__description {
@@ -68,6 +73,7 @@ export default defineComponent({
   &__action {
     &--p {
       font-size: 36px;
+      color: #4200ff;
     }
 
     &--logo {
