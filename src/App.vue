@@ -19,12 +19,28 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
+@import "./assets/css/breakpoints.scss";
+
 #app {
   display: flex;
   flex-direction: column;
   margin: auto;
   width: 100%;
   min-height: 100vh;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    169deg,
+    rgba(255, 255, 255, 1) 24%,
+    rgba(240, 240, 240, 1) 24%
+  );
+
+  @include media-down(md) {
+    background: linear-gradient(
+      169deg,
+      rgba(255, 255, 255, 1) 14%,
+      rgba(240, 240, 240, 1) 14%
+    );
+  }
 }
 .container {
   max-width: 1460px;
