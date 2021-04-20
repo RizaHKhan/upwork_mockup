@@ -23,7 +23,7 @@
 
 <script lang="ts">
 import { defineComponent, ref } from "vue";
-import CoreLogo from "@/components/core/CoreLogo";
+import CoreLogo from "@/components/core/CoreLogo.vue";
 
 export default defineComponent({
   name: "Menu",
@@ -76,6 +76,7 @@ export default defineComponent({
 
     &--text {
       margin: auto 30px auto 0;
+
       @include media-down(sm) {
         display: none;
       }
